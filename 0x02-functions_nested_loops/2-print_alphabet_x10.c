@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_letter_10times - prints alphabets in lowercase ten times
+ * print_alphabet_x10 - prints alphabets in lowercase ten times
  */
 
-void print_letter_10time(void)
+void print_alphabet_x10(void)
 {
 	char ch;
 	int i = 1;
