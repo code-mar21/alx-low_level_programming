@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - Entry point
  *
@@ -11,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-	        _putchar(charArray[i]);
+		_putchar(charArray[i]);
 	}
 	_putchar('\n');
 	return (0);
