@@ -1,19 +1,26 @@
-
-#include "main.h"
-
+#include"main.h"
 /**
- * _strlen - is a function that returns the length of a string
- * @s: input char
- * Return: length of a string
+ * _strncpy - is a function that copies a string
+ * @dest : pointer to first input
+ * @src : pointer to second input
+ * @n : number input
+ * Return: *dest
  */
-
-int _strlen(char *s)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int l = 0;
+	int i = 0;
 
-	while (s[l] != '\0')
+	while (src[i] != '\0' && i < n)
 	{
-		l++;
+		dest[i] = src[i];
+		i++;
 	}
-	return (l);
+
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+
+	return (dest);
 }
